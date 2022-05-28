@@ -1,6 +1,7 @@
 # NormalizationEffectsNeuralNetworks
 
 
+Authors of this repository are Konstantinos Spiliopoulos and Jiahui Yu.
 
 This repository contains code supporting the article
 
