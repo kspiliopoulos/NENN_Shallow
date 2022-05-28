@@ -4,7 +4,7 @@
 
 This repository contains code supporting the article
 
-Konstantinos Spiliopoulos and Jiahui Yu, "Normalization effects on shallow neural networks and related asymptotic expansions", 2021, AIMS Journal on Foundations of Data Science , ,June 2021, Vol. 3, Issue 2, pp. 151-200.
+Konstantinos Spiliopoulos and Jiahui Yu, "Normalization effects on shallow neural networks and related asymptotic expansions", 2021, AIMS Journal on Foundations of Data Science, June 2021, Vol. 3, Issue 2, pp. 151-200.
 
 ArXiv preprint: https://arxiv.org/abs/2011.10487.
 
