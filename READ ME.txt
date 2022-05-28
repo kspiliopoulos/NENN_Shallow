@@ -1,0 +1,129 @@
+# scalingnn
+
+This code trains and evaluates certain neural networks on MNIST and/or CIFAR10 
+data.
+
+## Files
+
+- models.py:  specifies the available neural network models
+- functions.py:  helper functions for training the models, calculating test and 
+    train accuracy, saving results, etc.
+- process.py:  main function for running the models
+- plots.py:  main function for plotting results
+- script.sh:  bash script for submitting jobs to the SCC
+
+## Parameters
+
+- dataset_name = 'mnist' or 'cifar10'
+- model_name = 'mlp' for single layer network, 'cnn' for convolutional network
+- criterion_name = 'ce' for cross-entropy loss, 'mse' for mean squared error
+- gamma = exponent in the N^{-\gamma} scaling for network normalization (used in process.py)
+- gamma_list = list of gamma parameters (used in plots.py)
+- hidden_units = number of hidden units N
+- epochs = 500 for single layer on MNIST data, 1000 for CNN on CIFAR10 data
+- batch_size = 20 for single layer model, 500 for CNN
+- directory = where to save / read results
+
+## Running code locally
+
+1.  Save all of the Python files above to a specific folder.
+2.  In process.py at the bottom of the file, comment out the command line 
+    parameters and specify the local parameters.
+3.  Run process.py for any combination of parameters.
+4.  To plot the results, in plots.py at the bottom of the file, comment out the 
+    command line parameters and specify the local parameters.
+5.  Run plots.py for any combination of parameters for which results from 
+    process.py have been saved.
+    
+For example:
+```python
+# PARAMETERS TO RUN LOCALLY
+dataset_name = 'mnist'
+model_name = 'mlp'
+criterion_name = 'mse'
+gamma = 0.6
+hidden_units = 100
+epochs = 500
+batch_size = 20
+directory = '/project/scalingnn/test/'
+
+process(
+    dataset_name=dataset_name,
+    model_name=model_name,
+    criterion_name=criterion_name,
+    gamma=gamma,
+    hidden_units=hidden_units,
+    epochs=epochs,
+    batch_size=batch_size,
+    directory=directory)
+```
+
+Another example:
+
+```python
+# PARAMETERS TO RUN LOCALLY
+dataset_name = 'cifar10'
+model_name = 'cnn'
+criterion_name = 'ce'
+gamma_list = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+hidden_units = 3000
+epochs = 1000
+batch_size = 500
+is_test_accuracy = False
+directory = '/project/scalingnn/test/'
+    
+run_multiple_gamma_accuracy_plots(
+    dataset_name=dataset_name,
+    model_name=model_name,
+    criterion_name=criterion_name,
+    gamma_list=gamma_list,
+    hidden_units=hidden_units,
+    epochs=epochs,
+    batch_size=batch_size,
+    is_test_accuracy=is_test_accuracy,
+    directory=directory)
+
+```
+
+## Running code on the SCC
+
+1.  In process.py and plots.py at the bottom, comment out the local parameters 
+    and uncomment the command line parameters.
+2.  Save files to a specific directory.
+3.  Update the script, if necessary.
+4.  Submit jobs to the SCC via the terminal by specifying the script to use and 
+    the relevant parameters (in order)
+
+For example:
+```bash
+# Change directory and prepare the script
+
+cd Documents/New/code
+dos2unix script.sh
+
+
+# Run MLP model on MNIST data using Cross-Entropy loss
+
+for h in 100 500 1000 3000
+do
+   qsub script.sh 'mnist' 'mlp' 'ce' 0.6 $h 500 20 '/project/scalingnn/
+done
+
+
+# Run MLP model on MNIST data using MSE loss
+
+for h in 100 500 1000 3000
+do
+   qsub script.sh 'mnist' 'mlp' 'mse' 0.6 $h 500 20 '/project/scalingnn/
+done
+
+
+# Run CNN model on CIFAR10 data using Cross-Entropy loss
+
+for h in 100 500 1000 3000
+do
+   qsub script.sh 'cifar10' 'cnn' 'ce' 0.6 $h 1000 500 '/project/scalingnn/
+done
+```
+READ ME.txt
+Displaying READ ME.txt.
