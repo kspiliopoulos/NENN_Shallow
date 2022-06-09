@@ -59,7 +59,7 @@ The second example is an implementation of the same idea to a Convolutional Nuer
 
 ![plot_cnn_cifar10_h3000_e1000](https://user-images.githubusercontent.com/106413949/172856057-dd0087bb-1d3a-4629-9b99-bd5ff1769185.png)
 
-***These numerical studies were done without further parameter tuning. Further parameter tuning will improve the accuracy more. However, the point here is that $\gamma->1$ is a theoretically informed optimal choice (when paired with the correct learning rate choice) that allows the user to immediately achieve great accuracy without the need of further parameter tuning!!***
+***These numerical studies were done without further parameter tuning. Further parameter tuning will improve the accuracy more. However, the point here is that*** $\gamma \rightarrow 1$ ***is a theoretically informed optimal choice (when paired with the correct learning rate choice) that allows the user to immediately achieve great accuracy without the need of further parameter tuning!!***
 
 
 
