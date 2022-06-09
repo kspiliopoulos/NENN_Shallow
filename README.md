@@ -45,17 +45,17 @@ for $\alpha$ a constant of order one.
 
 The goal of the paper [8] is to study  the performance of neural networks scaled by $1/N^{\gamma}$ with $\gamma\in [1/2, 1]$. 
 
-The theoretical results derive an asymptotic expansion of the neural network's output with respect to $N$. This expansion demonstrates the effect of the choice of  $\gamma$ on bias and vairance. In particular, for large and fixed $N$, the variance goes down monotonically as $\gamma$ increases to $1$.
+The theoretical results of [8] derive an asymptotic expansion of the neural network's output with respect to $N$. This expansion demonstrates the effect of the choice of  $\gamma$ on bias and variance. In particular, for large and fixed $N$, the variance goes down monotonically as $\gamma$ increases to $1$.
 
 The numerical results of [8], done on MNIST [10] and CIFAR10 [9] datasets, demonstrate that train and test accuracy monotonically increase as $\gamma$ increases to $1$. 
 
-The conclusion is that the mean-field normalization $\gamma=1$ is clearly the optimal choice!! But, for this to be realized the learning rate has to be chosen appropriately based on a theoretically informed choice (see for example the discussion above in the case of shallow neural networks).
+The conclusion is that being close to the mean-field normalization $\gamma=1$ is clearly the optimal choice!! But, for this to be realized the learning rate has to be chosen appropriately based on a theoretically informed choice (see for example the discussion above in the case of shallow neural networks).
 
-Below are two numerical examples. **These numerical studies were done without further parameter tuning**.  The first example is on the MNIST data set [10] with cross-entropy loss function with $N=3000$ hidden units (taken from [8]). 
+Below are two numerical examples. **These numerical studies were done without further parameter tuning**.  The first example is on the MNIST data set [10] with the cross-entropy loss function with $N=3000$ hidden units (taken from [8]). 
 
 ![plot_mnist_ce_h3000_e500_b20_test](https://user-images.githubusercontent.com/106413949/172763587-1c41126e-368a-4f5f-8ab1-5c1b917dcc23.png)
 
-The second example is an implementation of the same idea to a Convolutional Nueral Network  (CNN) using the CIFAR10 dataset [9]. The effect of the scaling is even more apparent here. 
+The second example is an implementation of the same idea to a Convolutional Nueral Network  (CNN) applied to the CIFAR10 dataset [9]. The effect of the scaling is even more apparent here. 
 
 ![plot_cnn_cifar10_h3000_e1000](https://user-images.githubusercontent.com/106413949/172856057-dd0087bb-1d3a-4629-9b99-bd5ff1769185.png)
 
