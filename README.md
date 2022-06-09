@@ -93,7 +93,7 @@ Stochastic Processes and their Applications, 130(3), 1820-1852, 2020.
 [7] J. Sirignano and K. Spiliopoulos. Mean Field Analysis of Deep Neural Networks. Mathematics of
 Operations Research, 47(1):120-152, 2021.
 
-[9] K. Spiliopoulos and Jiahui Yu, Normalization effects on shallow neural networks and related asymptotic expansions, 2021, AIMS Journal on Foundations of Data Science, June 2021, Vol. 3, Issue 2, pp. 151-200.
+[8] K. Spiliopoulos and Jiahui Yu, Normalization effects on shallow neural networks and related asymptotic expansions, 2021, AIMS Journal on Foundations of Data Science, June 2021, Vol. 3, Issue 2, pp. 151-200.
 
 [9] A. Krizhevsky Learning Multiple Layers of Features from Tiny Images, Technical Report, 2009.
 
