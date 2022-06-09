@@ -49,7 +49,7 @@ The theoretical results derive an asymptotic expansion of the neural network's o
 
 The numerical results of [8], done on MNIST [10] and CIFAR10 [9] datasets, demonstrate that train and test accuracy monotonically increase as $\gamma$ increases to $1$. 
 
-The conclusion is that the mean-field normalization $\gamma=1$ is clearly the optimal choice!! But, for this to be realized the learning rate has to be chosen by appropriately based on theoretically informed choice (see for example the discussion above in the case of shallow neural networks).
+The conclusion is that the mean-field normalization $\gamma=1$ is clearly the optimal choice!! But, for this to be realized the learning rate has to be chosen appropriately based on a theoretically informed choice (see for example the discussion above in the case of shallow neural networks).
 
 Below are two numerical examples. **These numerical studies were done without further parameter tuning**.  The first example is on the MNIST data set [10] with cross-entropy loss function with $N=3000$ hidden units (taken from [8]). 
 
