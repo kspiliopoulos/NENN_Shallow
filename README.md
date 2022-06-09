@@ -1,4 +1,4 @@
-# Normalization Effects on Neural Networks
+# Normalization Effects on Neural Networks (NENN)
 
 Authors of this repository are Konstantinos Spiliopoulos and Jiahui Yu.
 
