@@ -16,7 +16,7 @@ To report bugs encountered in running the code, please contact Konstantinos Spil
 
 # Short exposition--Achieving good accuracy with less need for fine tuning. 
 
-Cosnider for example the one layer neural network
+Cosnider for example the one layer neural network (conclusions are the same for DNNs; see the CNN example below)
 
 $$
 \begin{align}
@@ -55,7 +55,7 @@ Below are two numerical examples. **These numerical studies were done without fu
 
 ![plot_mnist_ce_h3000_e500_b20_test](https://user-images.githubusercontent.com/106413949/172763587-1c41126e-368a-4f5f-8ab1-5c1b917dcc23.png)
 
-The second example is an implementation of the same idea to a Convolutional Neural Network  (CNN) applied to the CIFAR10 dataset [9] (see [8] for details). The effect of the scaling is even more apparent here. 
+The second example is an implementation of the same idea to a Convolutional Neural Network  (CNN), which is a **Deep Neural Network**, applied to the CIFAR10 dataset [9] (see [8] for details). The effect of the scaling is even more apparent here. 
 
 ![plot_cnn_cifar10_h3000_e1000](https://user-images.githubusercontent.com/106413949/172856057-dd0087bb-1d3a-4629-9b99-bd5ff1769185.png)
 
