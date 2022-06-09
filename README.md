@@ -16,7 +16,7 @@ To report bugs encountered in running the code, please contact Konstantinos Spil
 
 # Short exposition--Achieving good accuracy with less need for fine tuning. 
 
-Cosnider for example the one layer neural network (conclusions are the same for DNNs; see the CNN example below)
+Consider for example the one layer neural network (conclusions are similar for DNNs; see the CNN example below)
 
 $$
 \begin{align}
