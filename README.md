@@ -47,7 +47,7 @@ The goal of the aforementioned paper is to study  the performance of neural netw
 
 The theoretical results derive an asymptotic expansion of the neural network's output with respect to $N$. This expansion demonstrates the effect of the choice of  $\gamma$ on bias and vairance. In particular, for large and fixed $N$, the variance goes down monotonically as $\gamma$ increases to $1$.
 
-The numerical results of the paper, done on MNIST and CIFAR10 datasets, demonstrate that train and test accuracy monotonically increase as $\gamma$ goes to 1. 
+The numerical results of the paper, done on MNIST and CIFAR10 datasets, demonstrate that train and test accuracy monotonically increase as $\gamma$ goes to $1$. 
 
 The conclusion is that the mean-field normalization $\gamma=1$ is clearly the optimal choice!! But, for this to be relaized the learning rate has to be chosen by the theoretically informed choice stated above.
 
