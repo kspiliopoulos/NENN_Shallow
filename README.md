@@ -24,8 +24,10 @@ g^N(x;\theta) &= \frac{1}{N^{\gamma}} \sum_{i=1}^{N} C^i\sigma(W^i x+b^i)
 \end{align}
 $$
 
-where $\gamma\in[1/2,1]$ and $\theta = (C^1,\ldots, C^N, W^1, \ldots, W^N, b^1,\dots, b^N) \in \mathbb{R}^{(2+d)N}$ are the parameters to be learned. Here the two extreme cases are $\gamma=1/2$ that
-corresponds to the popular Xavier initialization, see [2], and $\gamma=1$ corresponds to the mean-field normalization, see [1,3,4,5,6,7]. 
+where $\gamma\in[1/2,1]$ and
+$\theta = (C^1,\ldots, C^N, W^1, \ldots, W^N, b^1,\dots, b^N) \in \mathbb{R}^{(2+d)N}$
+are the parameters to be learned. Here the two extreme cases are $\gamma=1/2$
+that corresponds to the popular Xavier initialization, see [2], and $\gamma=1$ corresponds to the mean-field normalization, see [1,3,4,5,6,7]. 
 
 Let the objective function be for example
 
@@ -43,9 +45,14 @@ $$
 
 for $\alpha$ a constant of order one.
 
-The goal of the paper [8] is to study  the performance of neural networks scaled by $1/N^{\gamma}$ with $\gamma\in [1/2, 1]$. 
+The goal of the paper [8] is to study  the performance of neural networks scaled by $1/N^{\gamma}$
+with $\gamma\in [1/2, 1]$. 
 
-The theoretical results of [8] derive an asymptotic expansion of the neural network's output with respect to $N$. This expansion demonstrates the effect of the choice of  $\gamma$ on bias and variance. In particular, for large and fixed $N$, the variance goes down monotonically as $\gamma$ increases to $1$.
+The theoretical results of [8] derive an asymptotic expansion of the neural network's output with respect to $N$. 
+This expansion demonstrates the effect of the choice of  $\gamma$   on bias and variance.
+In particular, for large and fixed $N$,
+the variance goes down monotonically as $\gamma$
+increases to $1$.
 
 The numerical results of [8], done on MNIST [10] and CIFAR10 [9] datasets, demonstrate that train and test accuracy monotonically increase as $\gamma$ increases to $1$. 
 
