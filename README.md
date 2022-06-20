@@ -37,7 +37,8 @@ $$
 \end{align}
 $$
 
-We learn the parameters $\theta$ using stochastic gradient descent. The choice of the learning rate is theoretically linked to the $\gamma$ parameter. In particular, the theory developed in [8] suggests that for this case the learning rate should be chosen to be of the order of
+We learn the parameters $\theta$ 
+using stochastic gradient descent. The choice of the learning rate is theoretically linked to the $\gamma$ parameter. In particular, the theory developed in [8] suggests that for this case the learning rate should be chosen to be of the order of
 
 $$
 \alpha_{N,\gamma}=\frac{\alpha}{N^{2(1-\gamma)}},
