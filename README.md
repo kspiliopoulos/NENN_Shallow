@@ -65,7 +65,7 @@ Below are two numerical examples. **These numerical studies were done without fu
 
 The second example is an implementation of the same idea to a Convolutional Neural Network  (CNN), which is a **Deep Neural Network**, applied to the CIFAR10 dataset [9] (see [8] for details). The effect of the scaling is even more apparent here. 
 
-![plot_cnn_cifar10_h3000_e1000](https://user-images.githubusercontent.com/106413949/172856057-dd0087bb-1d3a-4629-9b99-bd5ff1769185.png)
+![plot_cifar10_cnn_h3000_e1000_b500_test](https://user-images.githubusercontent.com/106413949/191270867-9c842e47-bd1a-41d9-b50e-608a84884ecb.png)
 
 ***These numerical studies were done without further parameter tuning. Further parameter tuning will improve the accuracy more. However, the point here is that*** $\gamma \rightarrow 1$ ***is a theoretically informed optimal choice (when paired with the correct learning rate choice) that allows the user to immediately achieve great accuracy without the need for further parameter tuning!!***
 
